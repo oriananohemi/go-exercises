@@ -18,6 +18,16 @@ func main() {
 
 	fmt.Println(a, b, c, d)
 
+	// tipos
+	// Si no se especifica el tipo, toma por defecto el del computador, ejemplo "int16 = 16bits = -2^15 a 2^15-1"
+	int     // Depende del OS (32 o 64 bits)
+	uint    // Números positivos
+	float   // Números decimales (se puede cambiar entre 32 o 64)
+	string  // DEBE IR CON "" comillas dobles
+	complex // hay de 32 y 64, se guardan numeros complejos
+
+	// fmt para imprimir
+	// https: //pkg.go.dev/fmt
 	fmt.Println("Hola mundo")
 
 }
