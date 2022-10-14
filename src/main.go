@@ -30,6 +30,36 @@ func main() {
 	// https: //pkg.go.dev/fmt
 	fmt.Println("Hola mundo")
 
+	// como buena practica si tenemos argumentos del mismo tipo unimos los argumentos. Ejemplo a,b int
+	func tripleArgument(a,b int, c string) {
+		fmt.Println(a,b,c)
+	}
+
+	func doubleReturn(a int) (c,d int) {
+		return a, a *2
+	}
+
+	value1, value2 := doubleReturn(2)
+
+	// ciclos
+	for i := 0; i<= 10; i++ {
+		fmt.Println((i))
+	}
+
+	// For while
+	counter := 0
+	for i := 0; i<= 10; i++ {
+		fmt.Println(counter)
+		counter++
+	}
+
+	// For forever - No tiene condicion
+	counter := 0
+	for {
+		fmt.Println(counter)
+		counter++
+	}
+
 }
 
 // go build "main" --- compila el archivo del código
