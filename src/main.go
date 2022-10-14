@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 	// Declaración
@@ -59,6 +62,32 @@ func main() {
 		fmt.Println(counter)
 		counter++
 	}
+
+	// Negacion !
+	myVar := true
+	!myVar
+
+
+	// Convertir texto a numero
+	value, err := strconv.Atoi("53")
+
+	// defer, es lo último que se ejecuta, es para cerrar una conexion a base de datos, algo que se debe cerrar.
+	defer fmt.Println(("hola"))
+
+	// ARRAY INMUTABLE - SLICE MUTABLE
+	var array[4]int
+	// tamaño
+	len(array)
+	// capacidad
+	cap(array)
+
+	// La diferencia con Array es que a este no se le indica cuantos elementos va a tener
+	slice := []int{0,1,2,3,4}
+
+	//el ultimo numero es exclusivo, es decir, no se toma en cuenta, el primero es inclusivo, ese si se toma en cuenta.
+	slice[:3]
+	slice[2:4]
+
 
 }
 
