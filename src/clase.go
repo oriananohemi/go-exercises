@@ -5,7 +5,7 @@ type car struct {
 	year  int
 }
 
-// struct = clase
+// struct es como una clase en otros lenguajes
 func clase() {
 	myCard := car{brand: "For", year: 2020}
 }

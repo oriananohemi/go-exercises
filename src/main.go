@@ -6,23 +6,21 @@ import (
 )
 
 func main() {
-	// Declaración
 	const pi float64 = 3.1416
 	const pi2 = 3.1416
 	base := 5 // declara y asigna la variable
 	var altura int = 14
 	var rango int
 
-	// Las variables tienen un valor por defecto, no se asigna null
+	// Las variables tienen un valor por defecto, no se asigna nill
+	// null en Go es nill
 	var a int     // 0
 	var b float64 // 0
 	var c string  // " "
 	var d bool    // false
 
-	fmt.Println(a, b, c, d)
-
-	// tipos
-	// Si no se especifica el tipo, toma por defecto el del computador, ejemplo "int16 = 16bits = -2^15 a 2^15-1"
+	// Si no se especifica en el tipo los bits, toma por defecto el del computador.
+	// Ejemplo "int16 = 16bits = -2^15 a 2^15-1"
 	int     // Depende del OS (32 o 64 bits)
 	uint    // Números positivos
 	float   // Números decimales (se puede cambiar entre 32 o 64)
@@ -38,13 +36,13 @@ func main() {
 		fmt.Println(a,b,c)
 	}
 
+	// retorna doble valor
 	func doubleReturn(a int) (c,d int) {
 		return a, a *2
 	}
-
 	value1, value2 := doubleReturn(2)
 
-	// ciclos
+	// For
 	for i := 0; i<= 10; i++ {
 		fmt.Println((i))
 	}
@@ -67,11 +65,10 @@ func main() {
 	myVar := true
 	!myVar
 
-
 	// Convertir texto a numero
 	value, err := strconv.Atoi("53")
 
-	// defer, es lo último que se ejecuta, es para cerrar una conexion a base de datos, algo que se debe cerrar.
+	// defer, es lo último que se ejecuta, es para cerrar una conexion a base de datos o algo que se debe cerrar.
 	defer fmt.Println(("hola"))
 
 	// ARRAY INMUTABLE - SLICE MUTABLE
@@ -84,7 +81,7 @@ func main() {
 	// La diferencia con Array es que a este no se le indica cuantos elementos va a tener
 	slice := []int{0,1,2,3,4}
 
-	//el ultimo numero es exclusivo, es decir, no se toma en cuenta, el primero es inclusivo, ese si se toma en cuenta.
+	//el último numero es exclusivo, es decir, no se toma en cuenta, el primero es inclusivo, ese si se toma en cuenta.
 	slice[:3]
 	slice[2:4]
 
@@ -99,7 +96,7 @@ func main() {
 		value, ok := m["Joseph"]
 
 
-		// Si la primera letra de la funcion es MAYUSCULA es publica, sino es privada
+		// Si la primera letra de la funcion es MAYUSCULA es Publica, sino es privada
 		// Se debe agregar un comentario para indicar que hace
 		CarPublic
 		carPrivado
