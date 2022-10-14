@@ -89,6 +89,23 @@ func main() {
 	slice[2:4]
 
 
+	// Maps --- Si accedes a una llave que no se encuentra el pone por defecto el valor según el tipo que le indicaste
+		m := make(map[string]int)
+
+		m["José"] = 14
+		m["María"] = 13
+
+		// El ok valida si existe o no la variable - es un booleano
+		value, ok := m["Joseph"]
+
+
+		// Si la primera letra de la funcion es MAYUSCULA es publica, sino es privada
+		// Se debe agregar un comentario para indicar que hace
+		CarPublic
+		carPrivado
+
+		//Alias en la importación
+		import (pk "url del paquete")
 }
 
 // go build "main" --- compila el archivo del código
