@@ -1,12 +1,15 @@
 package palindromo
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func isPalindromo(text string) {
 	var textReverse string
 
 	for i := len(text) - 1; i >= 0; i-- {
-		textReverse += string(text[i])
+		textReverse += strings.ToLower(string(text[i]))
 	}
 
 	if text == textReverse {
