@@ -1,4 +1,4 @@
-package puntero
+package punteroEjercicio
 
 import "fmt"
 
